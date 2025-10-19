@@ -334,11 +334,12 @@ body {
 .content.has-text-justified {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .content.has-text-justified p {
   margin-bottom: 1.5rem;
+  color: var(--text-primary);
 }
 
 /* Footer Improvements */
@@ -731,6 +732,28 @@ a:focus {
   outline-offset: 2px;
 }
 
+
+/* Icon styling for links */
+.fab.fa-huggingface::before {
+  content: "🤗";
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+/* Ensure icons are visible */
+.button .icon i {
+  font-size: 1.1em;
+}
+
+/* Paper icon styling */
+.fas.fa-file-pdf {
+  color: #dc2626;
+}
+
+/* GitHub icon styling */
+.fab.fa-github {
+  color: #24292e;
+}
 
 /* Print styles */
 @media print {
